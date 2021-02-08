@@ -1,0 +1,7 @@
+runners\testRunner_Test.class
+stepDefinition\MyStepdefs.class
+apiEngine\model\requests\AddBooksRequest.class
+apiTests\E2E_Tests.class
+apiEngine\model\requests\AuthorizationRequest.class
+apiEngine\model\requests\RemoveBookRequest.class
+apiEngine\model\requests\ISBN.class
