@@ -10,5 +10,6 @@ public class Book {
     public Integer pages;
     public String description;
     public String website;
+    public String publish_date;
 
 }
