@@ -1,3 +1,4 @@
+/*
 package stepDefinition;
 
 
@@ -57,11 +58,12 @@ public class MyStepdefs {
             System.out.println("hello");
 
 
-         /*   RestAssured.baseURI = BASE_URL;
+   RestAssured.baseURI = BASE_URL;
             RequestSpecification request = RestAssured.given();
 
             request.header("Content-Type", "application/json");
-       */   //  response = request.body("{ \"userName\":\"" + USERNAME + "\", \"password\":\"" + PASSWORD + "\"}")
+
+   //  response = request.body("{ \"userName\":\"" + USERNAME + "\", \"password\":\"" + PASSWORD + "\"}")
            //         .post("/Account/v1/GenerateToken");
 
         //AuthorizationRequest authReq = new AuthorizationRequest("HareKrishna","HariBol@1234");
@@ -94,9 +96,10 @@ public class MyStepdefs {
 
         @Given("A list of books are available")
         public void listOfBooksAreAvailable() {
-     /*       RestAssured.baseURI = BASE_URL;
+       RestAssured.baseURI = BASE_URL;
             RequestSpecification request = RestAssured.given();
-            response = request.get("/BookStore/v1/Books");*/
+            response = request.get("/BookStore/v1/Books");
+
 
         //    jsonString = response.asString();
           //  List<Map<String, String>> books = JsonPath.from(jsonString).get("books");
@@ -119,14 +122,15 @@ public class MyStepdefs {
 
         @When("I add a book to my reading list")
         public void addBookInList() {
-/*            RestAssured.baseURI = BASE_URL;
+            RestAssured.baseURI = BASE_URL;
             RequestSpecification request = RestAssured.given();
             request.header("Authorization", "Bearer " + token)
                     .header("Content-Type", "application/json");
 
             response = request.body("{ \"userId\": \"" + USER_ID + "\", " +
                     "\"collectionOfIsbns\": [ { \"isbn\": \"" + bookId + "\" } ]}")
-                    .post("/BookStore/v1/Books");*/
+                    .post("/BookStore/v1/Books");
+
 
             ISBN isbn=new ISBN(bok.isbn);
             AddBooksRequest adbkreq =  new AddBooksRequest(USER_ID,isbn);
@@ -195,3 +199,4 @@ public class MyStepdefs {
 
 
 }
+*/
